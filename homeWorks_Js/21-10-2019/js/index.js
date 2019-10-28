@@ -2,9 +2,12 @@
 // ****************************
 // the Task №1
 // var x = prompt('Введите Х', '1'), // не было запятой
-//     y = prompt('Введите Y', '1');
+//     y = prompt('Введите Y', '1'),
+//     summ;
 
-// alert( 'Сумма: ' + x + y );
+//     summ = parseInt(x) + parseInt(y);
+
+// alert( 'Сумма: ' + summ);
 // ****************************
 
 // ****************************
@@ -23,8 +26,8 @@
 // var firstName = prompt('Введите Имя: ', ''),
 //     lastName = prompt('Введите Фамилию: ', '');
 
-//     firstName = firstName.charAt(0).toUpperCase() + firstName.slice(1);
-//     lastName = lastName.charAt(0).toUpperCase() + lastName.slice(1);
+// firstName = firstName.charAt(0).toUpperCase() + firstName.slice(1);
+// lastName = lastName.charAt(0).toUpperCase() + lastName.slice(1);
 
 // alert(`" What’s up ${``+ firstName} ${``+ lastName} "`);
 // ****************************
@@ -43,9 +46,12 @@
 
 // ****************************
 // the Task №5
-// var x = prompt('Введите число: ', ''),
-//     num = parseInt(x);
+var x = prompt('Введите число: ', ''),
+    num = parseInt(x),
+    even;
 
+even = num % 2 === 0;
+alert(even);
 // if (num % 2 === 0) {
 //     alert('Введённое число: <<чётное>>');
 // } else {
@@ -55,6 +61,7 @@
 
 // ****************************
 // the Task №6
+
 // ****************************
 
 // ****************************
