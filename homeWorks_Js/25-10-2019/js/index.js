@@ -112,24 +112,68 @@
 
 // **********************************************
 // Task №9
-var greeting = '',
-    userName = prompt('Input name: ', ''),
-    lang = prompt('Выберите язык "ru", "en", "de" ' + userName, ' ');
+// var greeting = '',
+//     userName = prompt('Input name: ', ''),
+//     lang = prompt('Выберите язык "ru", "en", "de" ' + userName, ' ');
 
-if (lang === 'ru') {
-    greeting = alert('Добрый день ' + userName + ' !');
-    console.log(greeting);
-} else if (lang === 'en') {
-    greeting = alert('Good day ' + userName + ' !');
-    console.log(greeting);
-} else if (lang === 'de') {
-    greeting = alert('guten Tag ' + userName + ' !');
-};
+// if (lang === 'ru') {
+//     greeting = alert('Добрый день ' + userName + ' !');
+//     console.log(greeting);
+// } else if (lang === 'en') {
+//     greeting = alert('Good day ' + userName + ' !');
+//     console.log(greeting);
+// } else if (lang === 'de') {
+//     greeting = alert('guten Tag ' + userName + ' !');
+// };
 // **********************************************
 
 // **********************************************
 // Task №10
+var month = new Date(),
+    today = month.getUTCMonth();
+
+console.log(month);
+
+switch (today) {
+    case 0: alert('This is winter');
+    break;
+    case 1: alert('This is winter');
+    break;
+    case 2: alert('This is spring');
+    break;
+    case 3: alert('This is spring');
+    break;
+    case 4: alert('This is spring');
+    break;
+    case 5: alert('This is summer');
+    break;
+    case 6: alert('This is summer');
+    break;
+    case 7: alert('This is summer');
+    break;
+    case 8: alert('This is autumn');
+    break;
+    case 9: alert('This is autumn');
+    break;
+    case 10: alert('This is autumn');
+    break;
+    case 11: alert('This is winter');
+    break;
+}
+// ++++++++++++++++++++++++++++++++++++++++++++
+// if (month === 0, month === 1, month === 11) {
+//     alert('This is winter');
+// } else if (month === 2, month === 3, month ===4) {
+//     alert('This is spring');
+// } else if (month === 5, month === 6, month === 7) {
+//     alert('This is summer');
+// } else if (month === 8, month === 9, month === 10) {
+//     alert('This is autumn');
+// }
+// ++++++++++++++++++++++++++++++++++++++++++++
+
 // **********************************************
+
 // **********************************************
 // Task №11
 // **********************************************
