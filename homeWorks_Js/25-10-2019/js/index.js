@@ -89,31 +89,51 @@
 
 // **********************************************
 // Task №8
-var usd_uan = +prompt('Сколько вы хотите купить долларов?: ', ''),
-    cursUsd = 25.10,
-    calcUsd;
+// var usd_uan = +prompt('Сколько вы хотите купить долларов?: ', ''),
+//     cursUsd = 25.10,
+//     calcUsd;
 
-switch (usd_uan) {
-    case usd_uan:
-        alert('С Вас: ' + (calcUsd = usd_uan * cursUsd) + ' гр ' + '  Продажа по курсу за 1$:  ' + cursUsd + ' гр');
-        break;
-}
+// switch (usd_uan) {
+//     case usd_uan:
+//         alert('С Вас: ' + (calcUsd = usd_uan * cursUsd) + ' гр ' + '  Продажа по курсу за 1$:  ' + cursUsd + ' гр');
+//         break;
+// }
 
-var uan_usd = +prompt('Сколько вы хотите сдать долларов?: ', ''),
-    cursUan = 24.50,
-    calcUan;
+// var uan_usd = +prompt('Сколько вы хотите сдать долларов?: ', ''),
+//     cursUan = 24.50,
+//     calcUan;
 
-switch (uan_usd) {
-    case uan_usd:
-        alert('Вам: ' + (calcUan = uan_usd * cursUan) + ' гр ' + '  Покупка по курсу за 1$:  ' + cursUan + ' гр');
-        break;
-}
+// switch (uan_usd) {
+//     case uan_usd:
+//         alert('Вам: ' + (calcUan = uan_usd * cursUan) + ' гр ' + '  Покупка по курсу за 1$:  ' + cursUan + ' гр');
+//         break;
+// }
 // **********************************************
 
 // **********************************************
 // Task №9
+var greeting = '',
+    userName = prompt('Input name: ', ''),
+    lang = prompt('Выберите язык "ru", "en", "de" ' + userName, ' ');
+
+if (lang === 'ru') {
+    greeting = alert('Добрый день ' + userName + ' !');
+    console.log(greeting);
+} else if (lang === 'en') {
+    greeting = alert('Good day ' + userName + ' !');
+    console.log(greeting);
+} else if (lang === 'de') {
+    greeting = alert('guten Tag ' + userName + ' !');
+};
 // **********************************************
 
 // **********************************************
 // Task №10
+// **********************************************
+// **********************************************
+// Task №11
+// **********************************************
+
+// **********************************************
+// Task №12
 // **********************************************
