@@ -79,15 +79,40 @@
 
 // ****************************
 // the Task №8
-var col1 = +prompt('first column: ', ''),
-    col2 = +prompt('first column: ', ''),
-    col3 = +prompt('first column: ', '');
+// var col1 = +prompt('first column: ', ''),
+//     col2 = +prompt('first column: ', ''),
+//     col3 = +prompt('first column: ', '');
 
-alert('Max column ' + Math.max(col1, col2, col3));
+// alert('Max column ' + Math.max(col1, col2, col3) + ' px');
 // ****************************
 
 // ****************************
 // the Task №9
+const pathMoon = 384000;
+
+alert('Расстояние до орбиты Земли 100 км, введите это расстояние ниже...');
+var pathOnOrbit = +prompt('Введите расстояние до орбиты: ', '');
+alert('Первая космическая скорость составляет 7,91 км/с');
+var firstCosmoSpeed = +prompt('Введите первую космическую скорость: ', '');
+alert('Вторая космическая скорость составляет 11.2 км/с');
+var secondCosmoSpeed = +prompt('Введите вторую космическую скорость: ', '');
+
+var timeOutOnOrbit,
+    isHour,
+    fullTime,
+    pathFromOrbitToMoon,
+    timeFromOrbitToMoon;
+
+timeOutOnOrbit = pathOnOrbit / firstCosmoSpeed;
+timeOutOnOrbit = (timeOutOnOrbit / 60) / 60;
+pathFromOrbitToMoon = pathMoon - pathOnOrbit;
+timeFromOrbitToMoon = pathFromOrbitToMoon / secondCosmoSpeed;
+isHour = (timeFromOrbitToMoon / 60) / 60;
+fullTime = isHour + timeOutOnOrbit;
+
+alert('Полёт на орбиту будет выполнен за: ' + timeOutOnOrbit.toFixed(4) + ' мин');
+alert('Полёт с орбиты на Луну будет выполнен за: ' + isHour.toFixed(4) + ' часов');
+alert('Полное время пути займёт: ' + fullTime.toFixed(4) + ' часов');
 // ****************************
 
 // ****************************
