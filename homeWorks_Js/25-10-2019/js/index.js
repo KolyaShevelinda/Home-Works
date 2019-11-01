@@ -175,52 +175,70 @@
 
 // **********************************************
 // Task №11
-var lang = prompt('Выберите язык "ru", "en" ', ''),
-    data = new Date(),
-    result;
+// var lang = prompt('Выберите язык "ru", "en" ', ''),
+//     data = new Date(),
+//     result;
 
-day = data.getDay();
-console.log(day);
+// day = data.getDay();
+// console.log(day);
 
-if (lang == 'ru') {
-    switch (lang == 'ru') {
-        case day === 1: result = alert('Сегодня понедельник');
-            break;
-        case day === 2: result = alert('Сегодня вторник');
-            break;
-        case day === 3: result = alert('Сегодня среда');
-            break;
-        case day === 4: result = alert('Сегодня четверг');
-            break;
-        case day === 5: result = alert('Сегодня пятница');
-            break;
-        case day === 6: result = alert('Сегодня суббота');
-            break;
-        case day === 7: result = alert('Сегодня воскресенье');
-            break;
-    }
-}
+// if (lang == 'ru') {
+//     switch (lang == 'ru') {
+//         case day === 1: result = alert('Сегодня понедельник');
+//             break;
+//         case day === 2: result = alert('Сегодня вторник');
+//             break;
+//         case day === 3: result = alert('Сегодня среда');
+//             break;
+//         case day === 4: result = alert('Сегодня четверг');
+//             break;
+//         case day === 5: result = alert('Сегодня пятница');
+//             break;
+//         case day === 6: result = alert('Сегодня суббота');
+//             break;
+//         case day === 7: result = alert('Сегодня воскресенье');
+//             break;
+//     }
+// }
 
-if (lang == 'en') {
-    switch (lang == 'en') {
-        case day === 1: result = alert('Today is Monday');
-            break;
-        case day === 2: result = alert('Today is Tuesday');
-            break;
-        case day === 3: result = alert('Today is Wednesday');
-            break;
-        case day === 4: result = alert('Today is Thursday');
-            break;
-        case day === 5: result = alert('Today is Friday');
-            break;
-        case day === 6: result = alert('Today is Saturday');
-            break;
-        case day === 7: result = alert('Today is Sunday');
-            break;
-    }
-}
+// if (lang == 'en') {
+//     switch (lang == 'en') {
+//         case day === 1: result = alert('Today is Monday');
+//             break;
+//         case day === 2: result = alert('Today is Tuesday');
+//             break;
+//         case day === 3: result = alert('Today is Wednesday');
+//             break;
+//         case day === 4: result = alert('Today is Thursday');
+//             break;
+//         case day === 5: result = alert('Today is Friday');
+//             break;
+//         case day === 6: result = alert('Today is Saturday');
+//             break;
+//         case day === 7: result = alert('Today is Sunday');
+//             break;
+//     }
+// }
 // **********************************************
 
 // **********************************************
 // Task №12
+var x = +prompt('x', 0);
+var error = null;
+
+switch (x) {
+    case 0: error = 'На ноль делить нельзя';
+    break;
+    case 1: error = 'На единицу делить бессмысленно';
+    break;
+    default: error = 'Не математическая операция';
+    break;
+}
+
+if (error) {
+    alert(error);
+} else {
+    alert(100 / x);
+}
+
 // **********************************************
