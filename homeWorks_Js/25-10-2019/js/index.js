@@ -26,9 +26,9 @@
 
 // if (summ <= 1000) {
 //     alert('Хрен слетаешь на Мальту, и не хватет выучить английский язык!!! ))) Остаётся только пиво!!!');
-// } else if (summ >= 1000, summ < 5000) {
+// } else if (summ >= 1000 && summ < 5000) {
 //     alert('Нечего пить пиво, денег хватает выучить английский!!!');
-// } else if (summ >= 5000, summ < 30000S) {
+// } else if (summ >= 5000 && summ < 30000) {
 //     alert('Пора собирать вещи и на Мальту');
 // }
 // **********************************************
@@ -37,7 +37,7 @@
 // Task №4
 // var age = +prompt('Введите сколько вам лет: ', '');
 
-// if (age >= 20, age < 30) {
+// if (age >= 20 && age < 30) {
 //     alert('Вам выслана повестка!');
 // } else {
 //     alert('Вы не попадаете на призыв! Повесткиии неее будет!!!');
@@ -51,13 +51,9 @@
 //     busNumber3 = 255,
 //     theBusArrived = +prompt('Прибыл автобус по маршруту №: ', '');
 
-// if (theBusArrived === busNumber1) {
+// if (theBusArrived === busNumber1 || theBusArrived === busNumber2 || theBusArrived === busNumber3) {
 //     alert('Проходите на посадку!');
-// } else if (theBusArrived === busNumber2) {
-//     alert('Проходите на посадку!');
-// } else if (theBusArrived === busNumber3) {
-//     alert('Проходите на посадку!');
-// }else {
+// } else {
 //     alert('Ожидайте свой маршрут!');
 // }
 // **********************************************
@@ -69,7 +65,7 @@
 // day.getUTCDay();
 // console.log(day);
 
-// if (day !== 5, day !== 6) {
+// if (day !== 5 && day !== 6) {
 //     alert('Вам пора на работу(');
 // } else {
 //     alert('Сегодня выходной!!!');
@@ -80,7 +76,7 @@
 // Task №7
 // var userName = prompt('Введите имя: ', '');
 
-// if ( userName == null) {
+// if ( userName === null || userName === '') {
 //     alert('К сожалению вы не ввели имя, досвидания!!!)))');
 // } else {
 //     alert('Привет, ' + userName);
@@ -89,23 +85,18 @@
 
 // **********************************************
 // Task №8
-// var usd_uan = +prompt('Сколько вы хотите купить долларов?: ', ''),
+// var selection = +prompt('Сделайте выбор (0 - покупка валюты, 1 - продажа валюты): ', 0),
 //     cursUsd = 25.10,
-//     calcUsd;
+//     cursUan = 24.50;
 
-// switch (usd_uan) {
-//     case usd_uan:
-//         alert('С Вас: ' + (calcUsd = usd_uan * cursUsd) + ' гр ' + '  Продажа по курсу за 1$:  ' + cursUsd + ' гр');
+// switch (selection) {
+//     case 0:
+//         usd_uan = +prompt('Сколько вы хотите купить долларов?: ', '')
+//         alert('С Вас: ' + (usd_uan * cursUsd) + ' гр ' + '  Продажа по курсу за 1$:  ' + cursUsd + ' гр');
 //         break;
-// }
-
-// var uan_usd = +prompt('Сколько вы хотите сдать долларов?: ', ''),
-//     cursUan = 24.50,
-//     calcUan;
-
-// switch (uan_usd) {
-//     case uan_usd:
-//         alert('Вам: ' + (calcUan = uan_usd * cursUan) + ' гр ' + '  Покупка по курсу за 1$:  ' + cursUan + ' гр');
+//     case 1:
+//         uan_usd = +prompt('Сколько вы хотите сдать долларов?: ', '')
+//         alert('Вам: ' + (uan_usd * cursUan) + ' гр ' + '  Покупка по курсу за 1$:  ' + cursUan + ' гр');
 //         break;
 // }
 // **********************************************
@@ -135,49 +126,39 @@
 // console.log(month);
 
 // switch (today) {
-//     case 0: alert('This is winter');
-//     break;
-//     case 1: alert('This is winter');
-//     break;
-//     case 2: alert('This is spring');
-//     break;
-//     case 3: alert('This is spring');
-//     break;
-//     case 4: alert('This is spring');
-//     break;
-//     case 5: alert('This is summer');
-//     break;
-//     case 6: alert('This is summer');
-//     break;
-//     case 7: alert('This is summer');
-//     break;
-//     case 8: alert('This is autumn');
-//     break;
-//     case 9: alert('This is autumn');
-//     break;
-//     case 10: alert('This is autumn');
-//     break;
-//     case 11: alert('This is winter');
-//     break;
+//     case 0:
+//     case 1:
+//     case 11:
+//         alert('This is winter');
+//         break;
+//     case 2:
+//     case 3:
+//     case 4: 
+//         alert('This is spring');
+//         break;
+//     case 5:
+//     case 6:
+//     case 7: 
+//         alert('This is summer');
+//         break;
+//     case 8:
+//     case 9:
+//     case 10: 
+//         alert('This is autumn');
+//         break;
 // }
-// ++++++++++++++++++++++++++++++++++++++++++++
-// if (month === 0, month === 1, month === 11) {
-//     alert('This is winter');
-// } else if (month === 2, month === 3, month ===4) {
-//     alert('This is spring');
-// } else if (month === 5, month === 6, month === 7) {
-//     alert('This is summer');
-// } else if (month === 8, month === 9, month === 10) {
-//     alert('This is autumn');
-// }
-// ++++++++++++++++++++++++++++++++++++++++++++
 // **********************************************
 
 // **********************************************
 // Task №11
-// var lang = prompt('Выберите язык "ru", "en" ', ''),
+// var lang = prompt('Выберите язык "ru", "en" ', 'ru'),
 //     data = new Date(),
 //     result;
+
+// if (lang == null || lang == '') {
+//     alert('Вы ничего не выбрали, сделайте пожалуйста выбор');
+//     lang = prompt('Выберите язык "ru", "en" ', 'ru');
+// }
 
 // day = data.getDay();
 // console.log(day);
@@ -199,9 +180,7 @@
 //         case day === 7: result = alert('Сегодня воскресенье');
 //             break;
 //     }
-// }
-
-// if (lang == 'en') {
+// } else if (lang == 'en') {
 //     switch (lang == 'en') {
 //         case day === 1: result = alert('Today is Monday');
 //             break;
@@ -228,11 +207,11 @@ var error = null;
 
 switch (x) {
     case 0: error = 'На ноль делить нельзя';
-    break;
+        break;
     case 1: error = 'На единицу делить бессмысленно';
-    break;
-    default: error = 'Не математическая операция';
-    break;
+        break;
+    case NaN: error = 'Не математическая операция';
+        break;
 }
 
 if (error) {
@@ -240,5 +219,4 @@ if (error) {
 } else {
     alert(100 / x);
 }
-
 // **********************************************
