@@ -129,37 +129,37 @@
 
 // **********************************************
 // Task №10
-var month = new Date(),
-    today = month.getUTCMonth();
+// var month = new Date(),
+//     today = month.getUTCMonth();
 
-console.log(month);
+// console.log(month);
 
-switch (today) {
-    case 0: alert('This is winter');
-    break;
-    case 1: alert('This is winter');
-    break;
-    case 2: alert('This is spring');
-    break;
-    case 3: alert('This is spring');
-    break;
-    case 4: alert('This is spring');
-    break;
-    case 5: alert('This is summer');
-    break;
-    case 6: alert('This is summer');
-    break;
-    case 7: alert('This is summer');
-    break;
-    case 8: alert('This is autumn');
-    break;
-    case 9: alert('This is autumn');
-    break;
-    case 10: alert('This is autumn');
-    break;
-    case 11: alert('This is winter');
-    break;
-}
+// switch (today) {
+//     case 0: alert('This is winter');
+//     break;
+//     case 1: alert('This is winter');
+//     break;
+//     case 2: alert('This is spring');
+//     break;
+//     case 3: alert('This is spring');
+//     break;
+//     case 4: alert('This is spring');
+//     break;
+//     case 5: alert('This is summer');
+//     break;
+//     case 6: alert('This is summer');
+//     break;
+//     case 7: alert('This is summer');
+//     break;
+//     case 8: alert('This is autumn');
+//     break;
+//     case 9: alert('This is autumn');
+//     break;
+//     case 10: alert('This is autumn');
+//     break;
+//     case 11: alert('This is winter');
+//     break;
+// }
 // ++++++++++++++++++++++++++++++++++++++++++++
 // if (month === 0, month === 1, month === 11) {
 //     alert('This is winter');
@@ -171,11 +171,54 @@ switch (today) {
 //     alert('This is autumn');
 // }
 // ++++++++++++++++++++++++++++++++++++++++++++
-
 // **********************************************
 
 // **********************************************
 // Task №11
+var lang = prompt('Выберите язык "ru", "en" ', ''),
+    data = new Date(),
+    result;
+
+day = data.getDay();
+console.log(day);
+
+if (lang == 'ru') {
+    switch (lang == 'ru') {
+        case day === 1: result = alert('Сегодня понедельник');
+            break;
+        case day === 2: result = alert('Сегодня вторник');
+            break;
+        case day === 3: result = alert('Сегодня среда');
+            break;
+        case day === 4: result = alert('Сегодня четверг');
+            break;
+        case day === 5: result = alert('Сегодня пятница');
+            break;
+        case day === 6: result = alert('Сегодня суббота');
+            break;
+        case day === 7: result = alert('Сегодня воскресенье');
+            break;
+    }
+}
+
+if (lang == 'en') {
+    switch (lang == 'en') {
+        case day === 1: result = alert('Today is Monday');
+            break;
+        case day === 2: result = alert('Today is Tuesday');
+            break;
+        case day === 3: result = alert('Today is Wednesday');
+            break;
+        case day === 4: result = alert('Today is Thursday');
+            break;
+        case day === 5: result = alert('Today is Friday');
+            break;
+        case day === 6: result = alert('Today is Saturday');
+            break;
+        case day === 7: result = alert('Today is Sunday');
+            break;
+    }
+}
 // **********************************************
 
 // **********************************************
