@@ -210,8 +210,6 @@ switch (x) {
         break;
     case 1: error = 'На единицу делить бессмысленно';
         break;
-    case NaN: error = 'Не математическая операция';
-        break;
 }
 
 if (error) {
