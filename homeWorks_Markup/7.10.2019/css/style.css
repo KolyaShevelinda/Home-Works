@@ -21,7 +21,12 @@ h1, h2, h3, h4, h5, h6 {
 
 img {
     width: 100%;
+    height: auto;
     vertical-align: middle;
+}
+
+.wrapper {
+    margin: 0 auto;
 }
 
 header {
@@ -35,8 +40,14 @@ main {
     align-content: center;
 }
 
+.wrapper {
+    display: block;
+    position: relative;
+}
+
 .content {
     max-width: 1170px;
+    height: 75px;
     width: 100%;
     margin: 0 auto;
 }
@@ -44,6 +55,7 @@ main {
 section {
     max-width: 780px;
     width: 70%;
+    margin-top: 400px;
 }
 
 aside {
@@ -51,13 +63,14 @@ aside {
     width: 30%;
     margin-left: 30px;
     flex-grow: 1;
+    margin-top: 400px;
 }
 
 /* header content */
 .menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between;;
 }
 
 .logo a {
@@ -95,6 +108,10 @@ li a:hover {
     transition: 0.7s;
 }
 
+.slider {
+    height: auto;
+    width: 100%;
+}
 
 /* main content */
 article {
