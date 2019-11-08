@@ -6,17 +6,36 @@
 // *****************************
 // Task №2
 // *****************************
-let h3 = document.createElement('h3');
-document.body.appendChild(h3);
+// let h3 = document.createElement('h3');
+// document.body.appendChild(h3);
 
-for (let col = 0; col < 3; col++) {
-    let text = document.createElement('h3');
-    let name = prompt('Input name: ', '');
-    text.innerText = 'Happy birthday to you ' + name;
-    console.log(h3.appendChild(text), name);
-}
+// for (let col = 0; col < 3; col++) {
+//     let text = document.createElement('h3');
+//     let name = prompt('Input name: ', '');
+//     text.innerText = 'Happy birthday to you ' + name;
+//     console.log(h3.appendChild(text), name);
+// }
 // *****************************
 // Task №3
+let h4 = document.createElement('h4');
+document.body.appendChild(h4);
+
+for (let i = 0; i < 11; i++) {
+
+    let str = document.createElement('h4');
+    let notEven, even;
+
+    if (i % 2 !== 0) {
+        notEven = '#';
+    }
+    if (i % 2 === 0) {
+        even = '.';
+    }
+
+    str.innerText = notEven || even;
+    document.body.appendChild(str);
+    console.log(str);
+}
 // *****************************
 
 // *****************************
