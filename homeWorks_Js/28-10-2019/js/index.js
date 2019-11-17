@@ -17,29 +17,53 @@
 // }
 // *****************************
 // Task №3
-let h4 = document.createElement('h4');
-document.body.appendChild(h4);
+// let h4 = document.createElement('h4');
+// document.body.appendChild(h4);
 
-for (let i = 0; i < 11; i++) {
+// var str = '';
+// for (let i = 0; i < 11; i++) {
+//     let notEven, even;
 
-    let str = document.createElement('h4');
-    let notEven, even;
+//     if (i % 2 !== 0) {
+//         notEven = '#';
+//     } else {
+//         even = '.';
+//     }
 
-    if (i % 2 !== 0) {
-        notEven = '#';
-    }
-    if (i % 2 === 0) {
-        even = '.';
-    }
+//     str += notEven || even; 
+// }
 
-    str.innerText = notEven || even;
-    document.body.appendChild(str);
-    console.log(str);
-}
+// document.body.append(str);
+//     console.log(str);
 // *****************************
 
 // *****************************
 // Task №4
+// var string = '';
+
+// for (let i = 1; i <= 10; i++) {
+//     let str = document.createElement('h4');
+//     document.body.appendChild(str);
+//     var even, notEven = '';
+//     if (i % 2 === 0) {
+//         str.even = Math.pow(i, 2);
+//         console.log(str.even);
+//     } else {
+//         str.notEven;
+//         console.log(str.notEven);
+//     }
+//     string += str;
+// }
+
+// document.body.append(string);
+
+for(var i = 1; i < 11; i++) {
+     if (i % 2 === 0) { 
+        document.write(Math.pow(i, 2)); 
+        document.write(" "); 
+        console.log(Math.pow(i, 2));
+    } 
+}
 // *****************************
 
 // *****************************
