@@ -57,17 +57,28 @@
 
 // document.body.append(string);
 
-for(var i = 1; i < 11; i++) {
-     if (i % 2 === 0) { 
-        document.write(Math.pow(i, 2)); 
-        document.write(" "); 
-        console.log(Math.pow(i, 2));
-    } 
-}
+// -------work code-------
+// for(var i = 1; i < 11; i++) {
+//      if (i % 2 === 0) { 
+//         document.write(Math.pow(i, 2)); 
+//         document.write(" "); 
+//         console.log(Math.pow(i, 2));
+//     } 
+// }
 // *****************************
 
 // *****************************
 // Task №5 
+//
+// for (let i = 1; i < 3; i++) {
+//     if (window.confirm('Вам нужно подтвердить вход!!!')) {
+//         window.alert('Спасибо что вы с нами!!!)))!!!');
+//         break;
+//     }
+//     else {
+//         window.alert('Рекомендуем всё таки подтвердить вход!!!');
+//     }
+// }
 // *****************************
 
 // *****************************
