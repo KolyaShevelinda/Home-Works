@@ -38,25 +38,7 @@
 
 // *****************************
 // Task №4
-// var string = '';
 
-// for (let i = 1; i <= 10; i++) {
-//     let str = document.createElement('h4');
-//     document.body.appendChild(str);
-//     var even, notEven = '';
-//     if (i % 2 === 0) {
-//         str.even = Math.pow(i, 2);
-//         console.log(str.even);
-//     } else {
-//         str.notEven;
-//         console.log(str.notEven);
-//     }
-//     string += str;
-// }
-
-// document.body.append(string);
-
-// -------work code-------
 // for(var i = 1; i < 11; i++) {
 //      if (i % 2 === 0) { 
 //         document.write(Math.pow(i, 2)); 
@@ -95,18 +77,74 @@
 // *****************************
 // Task №7
 
+// let i = 0;
+// while (true) {
+//   let randomNumber = Math.random();
+//   i++;
+//   if (randomNumber > 0.99) {
+//     alert(`iteration count is ${i}, number is ${randomNumber}`);
+//     break;
+//   }
+// }
 // *****************************
 
 // *****************************
 // Task №8
+
+// for (let i = 1; i < 10; i++) {
+//     for (let j = 1; j < 10; j++) {
+//         console.log(i + " * " + j + " = " + i * j);
+//     }
+// }
 // *****************************
 
 // *****************************
 // Task №9 
+
+// let deckSize = +prompt('input count', '');
+// let result = "";
+// for (let i = 1; i <= deckSize; i++) {
+//     for (let j = 1; j <= deckSize; j++) {
+//       if (j % 2 === 0) {
+//         result += ( i % 2 === 0) ? " * " : " # ";        
+//       } else {
+//         result += ( i % 2 === 0) ? " # " : " * ";
+//       }
+//       if (j === deckSize) result += "\n";
+//     }
+// }
+// alert(result);
 // *****************************
 
 // *****************************
 // Task №10
+
+// // F = Fn-1 + Fn-2, n >= 2
+// let fibonachiNumbers = "";
+// let foundTotal = 0;
+// let fn1 = 0;
+// let fn2 = 0;
+// let currentFn = 0;
+// for (let i = 0;; i++) {
+//   if (i >= 2) {
+//     currentFn = fn1 + fn2;
+//     fibonachiNumbers += currentFn + ", ";
+//     fn1 = fn2;
+//     fn2 = currentFn
+//     foundTotal++
+//   } else {
+//     if (i === 0) {
+//       fn1 = 0;
+//       fibonachiNumbers += 0 + ", ";
+//     } else {
+//       fn2 = 1;
+//       fibonachiNumbers += 1 + ", ";
+//     }
+//     foundTotal++
+//   }
+//   if (foundTotal === 20) { break }
+// }
+// console.log(fibonachiNumbers);
 // *****************************
 
 // *****************************
@@ -115,6 +153,12 @@
 
 // *****************************
 // Task №12 
+
+// for (let i = 0; i < 10; i++) {
+// 	for (let j = 0; j < 10; j++) { //i++ а надо j++
+// 		console.log(i + j);
+// 	}
+// }
 // *****************************
 
 // *****************************
