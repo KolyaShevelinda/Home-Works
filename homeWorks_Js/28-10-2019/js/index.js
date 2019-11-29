@@ -149,6 +149,40 @@
 
 // *****************************
 // Task №11
+
+// let userLogin = '';
+// let correctLogin = 'nike';
+// let userPassword = '';
+// let correctPassword = 'shev';
+
+// while (userLogin !== correctLogin || userPassword !== correctPassword) {
+//     userLogin = prompt('Введите логин : ', '');
+
+//     if (userLogin !== correctLogin) {
+//         if (userLogin === null) {
+//             let output = confirm('Вы уверены что хотите прекратить авторизацию ?');
+//             if (output === true) {
+//                 alert('Вы отменили авторизацию !!!');
+//                 break;
+//             } else {
+//                 continue;
+//             }
+//         }
+//         continue;
+//     }
+
+//     userPassword = prompt('Введите пароль : ', '');
+
+//     if (userPassword !== correctPassword) {
+//         alert('Не верный пароль !!! Пройдите авторизацию снова!!!');
+//         continue;
+//     }
+    
+// }
+
+// if (userLogin === correctLogin && userPassword === correctPassword) {
+//     alert('Вы авторизованы !!!');
+// }
 // *****************************
 
 // *****************************
@@ -156,14 +190,23 @@
 
 // for (let i = 0; i < 10; i++) {
 // 	for (let j = 0; j < 10; j++) { //i++ а надо j++
-// 		console.log(i + j);
+//      console.log('i =' + i, 'j =' + j);
 // 	}
 // }
 // *****************************
 
 // *****************************
 // Task №13 spes
-// *****************************
 
+// let countStrings = +prompt('Введите колличество строк : ', '');
+// let result = '';
 
+// for (let i = 0; i < 10; i++) {
+//     for (let j = -countStrings; j < countStrings; j++) {
+//         result += (j >= -i && j <= i) ? '#' : '.';
+//     }
+//     result += '\n';
+// }
+
+// console.log(result);
 // *****************************
