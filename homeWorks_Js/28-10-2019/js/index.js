@@ -151,22 +151,20 @@
 // Task №11
 
 // let userLogin = '';
-// let correctLogin = 'nike';
+// const correctLogin = 'nike';
 // let userPassword = '';
-// let correctPassword = 'shev';
+// const correctPassword = 'shev';
 
 // while (userLogin !== correctLogin || userPassword !== correctPassword) {
 //     userLogin = prompt('Введите логин : ', '');
 
-//     if (userLogin !== correctLogin) {
-//         if (userLogin === null) {
-//             let output = confirm('Вы уверены что хотите прекратить авторизацию ?');
-//             if (output === true) {
-//                 alert('Вы отменили авторизацию !!!');
-//                 break;
-//             } else {
-//                 continue;
-//             }
+//     if (userLogin === null) {
+//         let output = confirm('Вы уверены что хотите прекратить авторизацию ?');
+//         if (output === true) {
+//             alert('Вы отменили авторизацию !!!');
+//             break;
+//         } else {
+//             continue;
 //         }
 //         continue;
 //     }
@@ -177,7 +175,7 @@
 //         alert('Не верный пароль !!! Пройдите авторизацию снова!!!');
 //         continue;
 //     }
-    
+
 // }
 
 // if (userLogin === correctLogin && userPassword === correctPassword) {
