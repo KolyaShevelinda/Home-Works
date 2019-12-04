@@ -21,55 +21,74 @@
 
 // *********************
 //Task №2
-debugger;
-let person = {
-    firstname: 'Nike',
-    lastname: 'Shevelinda',
-    age: 40
-}
-console.log(person);
 
-let nameNewObj = new Object();
-person.nameNewObj = prompt('Введите название объекта : ', '');
-console.log(person);
-
-if (typeof person.nameNewObj === 'undefined') {
-
-    while (true) {
-
-        let fildObj = prompt('Введите название поля объекта ' + person.nameNewObj, '');
-        person.nameNewObj = fildObj;
-
-        let valueNewObj = prompt('Введите значение поля ' + person.nameNewObj + ' объекта ', '');
-        fildObj = valueNewObj;
-
-        if (nameNewObj === null || fildObj === null || valueNewObj === null) {
-            alert('Окончание работы с объектом ');
-            break;
-        }
-        console.log(person);
-    }
-
-} 
-
-// if (typeof person.nameNewObj === 'undefined') {
-
-//     person.nameNewObj = prompt('Введите название объекта : ', '');
-
-//     let fildObj = prompt('Введите название свойства объекта ' + person.nameNewObj, '');
-//     person.nameNewObj = fildObj;
-
-//     // let valueNewObj = prompt('Введите название свойства объекта : ' + nameNewObj + ' объекта ', '');
-//     // nameNewObj.fildObj = valueNewObj;
-
-//     console.log(person);
-
+// let field = null;
+// let phone = {};
+// let person = {
+//     firstname: 'Nike',
+//     lastname: 'Shevelinda',
+//     age: 40
 // }
+
+// do {
+//     field = prompt('Введите название поля', '');
+//     if (field) {
+//         const val = prompt('Введите значение поля', '');
+//         if (val) {
+//             phone[field] = val;
+//         } else {
+//             break;
+//         }
+//     } else {
+//         break;
+//     }
+// } while (field);
+
+// person.phone = phone;
+
+// console.log(person);
 
 // *********************
 
 // *********************
 //Task №3
+
+// let person = {
+//     firstname: 'Nike',
+//     lastname: 'Shevelinda',
+//     age: 40,
+//     phone: {
+//         brand: 'LG'
+//     }
+// }
+
+// while (1) {
+//     const field = prompt('Введите название поля для редактирования', '');
+//     if (field) {
+//         const action = prompt('Введите действие (delete | update)', '');
+//         if (action) {
+//             if (action === 'delete') {
+//                 delete person.phone[field];
+//             } else if (action === 'update') {
+//                 const newValue = prompt('Введите действие (delete | update)', '');
+//                 if(newValue) {
+//                     person.phone[field] = newValue;
+//                 } else {
+//                     break;
+//                 }
+//             } else {
+//                 alert("Неизвестное действие!");
+//                 break;
+//             }
+//         } else {
+//             break;
+//         }
+//     } else {
+//         break;
+//     }
+// }
+// console.log(person);
+
 // *********************
 
 // *********************
