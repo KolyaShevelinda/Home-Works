@@ -93,6 +93,32 @@
 
 // *********************
 //Task №4
+debugger
+let person = {
+    firstname: 'Nike',
+    lastname: 'Shevelinda',
+    age: 40,
+    phone: 'Samsung'
+}
+
+let listElement = document.createElement('dl');
+document.body.appendChild(listElement);
+
+for (let key in person) {
+    
+    if (key) {
+        let titleElement = document.createElement('dt');
+        listElement.appendChild(titleElement);
+        titleElement.innerText = key;
+
+        let defElement = document.createElement('dd');
+        listElement.appendChild(defElement);
+        defElement.innerText = person[key];
+    }
+    
+}
+
+
 // *********************
 
 // *********************
