@@ -93,38 +93,67 @@
 
 // *********************
 //Task №4
-debugger
-let person = {
-    firstname: 'Nike',
-    lastname: 'Shevelinda',
-    age: 40,
-    phone: 'Samsung'
-}
 
-let listElement = document.createElement('dl');
-document.body.appendChild(listElement);
+// let person = {
+//     firstname: 'Nike',
+//     lastname: 'Shevelinda',
+//     age: 40,
+//     phone: 'Samsung',
+// }
 
-for (let key in person) {
+// let listElement = document.createElement('dl');
+// document.body.appendChild(listElement);
+
+// for (let key in person) {
     
-    if (key) {
-        let titleElement = document.createElement('dt');
-        listElement.appendChild(titleElement);
-        titleElement.innerText = key;
+//     if (key) {
+//         let titleElement = document.createElement('dt');
+//         listElement.appendChild(titleElement);
+//         titleElement.innerText = key;
 
-        let defElement = document.createElement('dd');
-        listElement.appendChild(defElement);
-        defElement.innerText = person[key];
-    }
+//         let defElement = document.createElement('dd');
+//         listElement.appendChild(defElement);
+//         defElement.innerText = person[key];
+//     }
     
-}
-
+// }
 
 // *********************
 
 // *********************
 //Task №5
+
+// const dates = {
+//     startDate: new Date().setDate((new Date().getDate() - 365)),
+//     endDate: new Date().setDate((new Date().getDate() - 2)),
+// }
+
+// let inputDate = new Date(prompt('Введите дату ', '')).getTime();
+
+// if (inputDate >= dates.startDate && inputDate <= dates.endDate) {
+//     alert('Дата ' + `${inputDate}` + ' попадает в диаппазон дат');
+// } else {
+//     alert('Дата ' + `${inputDate}` + ' не попала в запланированый диаппазон');
+// }
+
 // *********************
 
 // *********************
 //Task №6
+
+const img = {
+    src:'https://www.google.com.ua/logos/doodles/2017/bella-akhmadulinas-80th-birthday-5134676388741120.3-law.gif',
+    alt: '',
+    style: 'border: 1px solid #ccc',
+    width: '200',
+}
+
+let imageEl = document.createElement('img');
+
+for (let key in img) {
+    imageEl.setAttribute(key, img[key]);
+}
+
+document.body.appendChild(imageEl);
+
 // *********************
